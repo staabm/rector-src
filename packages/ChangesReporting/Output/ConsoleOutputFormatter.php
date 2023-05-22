@@ -95,6 +95,7 @@ final class ConsoleOutputFormatter implements OutputFormatterInterface
                 $this->rectorOutputStyle->writeln('<options=underscore>Applied rules:</>');
                 $this->rectorOutputStyle->listing($rectorsChangelogsLines);
                 $this->rectorOutputStyle->newLine();
+                $this->rectorOutputStyle->writeln('Peak-Memory: '. memory_get_peak_usage(true) / 1024 / 1024 . ' MB');
             }
         }
     }

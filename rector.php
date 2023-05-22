@@ -59,7 +59,8 @@ return static function (RectorConfig $rectorConfig): void {
 
     $rectorConfig->importNames();
     $rectorConfig->removeUnusedImports();
-    $rectorConfig->parallel();
+    //$rectorConfig->parallel();
+    $rectorConfig->disableParallel();
 
     $rectorConfig->skip([
         StringClassNameToClassConstantRector::class,

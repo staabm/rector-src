@@ -447,8 +447,8 @@ CODE_SAMPLE;
     {
         $relativeFilePath = $this->filePathHelper->relativePath($this->file->getFilePath());
 
-        $this->rectorOutputStyle->writeln('[file] ' . $relativeFilePath);
-        $this->rectorOutputStyle->writeln('[rule] ' . static::class);
+        //$this->rectorOutputStyle->writeln('[file] ' . $relativeFilePath);
+        //$this->rectorOutputStyle->writeln('[rule] ' . static::class);
     }
 
     private function printConsumptions(float $startTime, int $previousMemory): void
@@ -462,7 +462,7 @@ CODE_SAMPLE;
             BytesHelper::bytes($currentTotalMemory),
             $elapsedTime
         );
-        $this->rectorOutputStyle->writeln($consumed);
-        $this->rectorOutputStyle->newLine(1);
+        //$this->rectorOutputStyle->writeln($consumed);
+        //$this->rectorOutputStyle->newLine(1);
     }
 }
