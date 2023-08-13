@@ -112,7 +112,7 @@ final class RectorConfig extends ContainerConfigurator
 
         if ($notExistsRules !== []) {
             throw new ShouldNotHappenException(
-                'Following skipped rules on $rectorConfig->skip() are no longer exists or changed to different namespace: ' . implode(
+                'Following skipped rules on $rectorConfig->skip() no longer exist or changed to different namespace: ' . implode(
                     ', ',
                     $notExistsRules
                 )
